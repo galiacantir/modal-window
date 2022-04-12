@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Window</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61968c8b40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- HW1: main - why? -->
+    <main id="content">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, tempore.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sunt quo reiciendis, perferendis eius dicta laborum voluptatem nemo adipisci fugiat culpa consectetur quia modi ducimus aspernatur molestias corrupti. At id totam magnam ab est ducimus, assumenda quibusdam tenetur voluptatem numquam? Quis soluta, ipsum illum aut voluptatem voluptatibus officiis! Corporis, voluptatibus.</p>
+        <p>Debitis dolorum cum delectus itaque quos quisquam ullam obcaecati consequuntur mollitia nisi? Minima aliquam ab ad necessitatibus veniam libero, repudiandae id magnam aut. Voluptate odio repellat quos, consectetur eius necessitatibus, quia labore tenetur inventore dolorem laboriosam aliquam reiciendis nam porro modi totam reprehenderit, numquam beatae nesciunt. Porro error at numquam.</p>
+        <p>Porro nostrum aspernatur facere quae illo hic eveniet officia velit ullam obcaecati, accusamus nulla perspiciatis aperiam fugiat ipsum deleniti eius, non totam! Quibusdam voluptas est alias doloribus deleniti veniam a maiores quos, beatae odit molestias, animi et rerum asperiores? Magnam veritatis recusandae consectetur nostrum earum laudantium libero accusantium hic impedit?</p>
+    
+        <p class="ad">
+            To benefit from it HIT <a href="#modal">This button</a>
+        </p>
+    </main>
+
+    <div id="modal">
+        
+        <h1>Apply for this product</h1>
+        <h2>In order to apply fill in the blank</h2>
+
+        <form>
+            <!-- HW: add label, add select input phone, add required-->
+            <label for="">Your name</label>
+            <br>
+            <input type="text" placeholder="John Doe" required>
+            <br>
+            
+            <label for="">Phone</label>
+            <br>
+            <select>
+                <option value="">Select Country Phone Code</option>
+                <option value="moldova">Moldova</option>
+                <option value="spania">Spania</option>
+                <option value="portugalia">Portugalia</option>
+                <option value="italia">Italia</option>
+            </select>
+            <br>
+            <input type="text" placeholder="phone: +123-456-790" required><br>
+            
+            <label for="">Email</label> <br>
+            <input type="email" placeholder="email: john@gmail.com" required><br>
+
+            <button>APPLY</button>
+        </form>
+        <a href="">
+            <i class="fas fa-circle-xmark"></i>
+        </a>
+
+    </div>
+    
+    <div class="overlay"></div>
+
+</body>
+</html>

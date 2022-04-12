@@ -1,0 +1,172 @@
+body{
+    background-color: #223;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Libre Baskerville', serif;
+    color:whitesmoke;
+}
+
+#content{
+    width: 90%;
+    margin: 10% auto;
+    text-align: justify;
+    font-size: 100%;
+}
+
+#content h1, 
+#content h2{
+    text-align: center;
+}
+
+#content p:nth-of-type(1){
+    margin-top: 40px;
+}
+
+#content .ad{
+    font-size: 100%;
+    margin: 5% 0;
+    text-align: right;
+}
+
+#content .ad a{
+    background-color: #034f84;
+    /* text-transform: uppercase; */
+    padding: 1%;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 2%;
+    border-radius: 8px;
+    cursor: pointer;
+    /* transition: 3s;
+    animation: shadow-pulse 3s infinite; */
+}
+
+
+#content .ad a:hover{
+    animation: shadow-pulse 3s infinite;
+}
+
+@keyframes shadow-pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+        transform: scale(1);
+    }
+
+    70%{
+        box-shadow: 0 0 0 25px rgba(255, 255, 255, 0.1);
+        transform: scale(1);
+    }
+
+    70%{
+        box-shadow: 0 0 0 25px rgba(255, 255, 255, 0);
+        transform: scale(1);
+    }
+
+
+}
+
+
+/* MODAL */
+
+#modal{
+    background-color: #034f84;
+    padding: 2%;
+    font-size: 90%;
+
+    display: none;
+    position: fixed;
+
+    top: 10%;
+    /* bottom: 30%; */
+    right: 25%;
+    left: 25%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#modal:target{
+    display: block;
+}
+
+
+#modal h1, #modal h2{
+    text-align: center;
+}
+#modal input{
+    padding: 2%;
+    width: 86%;
+    margin: 10px 25px;
+    border-radius: 5px;
+    border:none;
+}
+
+#modal label{
+    margin-left: 25px;
+}
+
+#modal input:focus{
+    outline: none;
+    background-color: #e6e6e6;
+}
+
+
+#modal select{
+    border:none;
+    border-radius: 5px;
+    padding: 1%;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#modal select:focus{
+    outline: none;
+    background-color: #e6e6e6;
+}
+
+
+#modal button{
+    padding: 3%;
+    width: 90.5%;
+    background-color: #000A;
+    margin: 10px 25px;
+    border-radius: 5px;
+    border:none;
+    color: white;
+    font-weight: 700;
+}
+
+#modal button:hover{
+    background-color: #000;
+}
+
+#modal a{
+    color: white;
+    text-decoration: none;
+    font-size: 190%;
+    /* border: 1px solid black; */
+    padding: 8px;
+    /* border-radius: 50%; */
+
+    position: absolute;
+    right: 4%;
+    top: 2%;
+}
+
+#modal a:hover{
+    color: #000A;
+}
+
+
+#modal:target+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color:#000A;
+}
+
+
+/* HW: UX
+    - add effects on :hover
+    - animation for button */
